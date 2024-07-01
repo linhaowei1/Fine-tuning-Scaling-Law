@@ -1,0 +1,13 @@
+\begin{tabular}{llllllllll}
+\toprule
+ & FLAN-AtS & FLAN-OurFit & FLAN-VanillaFit & WMT19-AtS & WMT19-OurFit & WMT19-VanillaFit & GIGAWORD-AtS & GIGAWORD-OurFit & GIGAWORD-VanillaFit \\
+\midrule
+\textbf{PearCorr}-1/8 & \textbf{90.9} & \underline{77.9} & 34.7 & \textbf{98.9} & \underline{95.0} & 94.4 & \textbf{98.9} & \underline{97.0} & 95.1 \\
+\textbf{PearCorr}-1/16 & \textbf{73.1} & \underline{67.4} & 58.1 & \textbf{97.0} & \underline{93.6} & 83.7 & \textbf{97.6} & 90.7 & \underline{92.8} \\
+\textbf{PearCorr}-1/32 & \textbf{65.5} & \underline{54.4} & 43.1 & \textbf{97.7} & \underline{91.1} & 79.6 & \textbf{96.9} & 88.3 & \underline{91.0} \\
+\textbf{PearCorr}-1/64 & \textbf{61.1} & \underline{47.6} & 46.7 & \textbf{86.0} & \underline{83.9} & 30.9 & \textbf{92.0} & 83.6 & \underline{84.3} \\
+\textbf{PearCorr}-1/128 & \underline{52.2} & \textbf{54.9} & 41.4 & \underline{78.0} & \textbf{78.9} & 35.2 & \textbf{91.1} & \underline{83.6} & 47.3 \\
+\textbf{PearCorr}-1/256 & \textbf{50.5} & 41.1 & \underline{45.0} & \textbf{73.4} & \underline{72.9} & 41.1 & \textbf{89.1} & 81.5 & \underline{85.8} \\
+\textbf{PearCorr}-1/512 & \textbf{45.6} & \underline{36.8} & 20.7 & \underline{61.5} & \textbf{61.5} & 56.5 & \textbf{91.0} & 78.5 & \underline{79.3} \\
+\bottomrule
+\end{tabular}
