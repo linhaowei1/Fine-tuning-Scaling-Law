@@ -2,10 +2,10 @@
 
 This repository contains the code for our ICML 2024 paper [Selecting Large Language Model to Fine-tune via Rectified Scaling Law](https://arxiv.org/pdf/2402.02314.pdf) by [Haowei Lin](https://linhaowei1.github.io/), [Baizhou Huang](https://scholar.google.com/citations?user=1Zx1wi8AAAAJ), [Haotian Ye](https://haotianye.com/), [Qinyue Chen](https://scholar.google.com/citations?user=y13QmxkAAAAJ&hl=zh-CN&oi=ao), [Zihao Wang](https://zhwang4ai.github.io/), [Sujian Li](https://pku-tangent.github.io/), [Jianzhu Ma](https://majianzhu.com/), [Xiaojun Wan](https://wanxiaojun.github.io/), [James Zou](https://www.james-zou.com/), [Yitao Liang](https://scholar.google.com/citations?user=KVzR1XEAAAAJ).
 
-## Fine-tuning Performance of 30 models
+## Fine-tuning performance of 30 models
 The fine-tuning performance of the 30 models on various sizes (from 0 to 1638400) of subsets from 3 datasets (WMT19, Gigaword, FLAN) is presented in `benchmark/`.
 
-## Source codes
+## Source code
 
 There are three files in `src/`
 
@@ -13,13 +13,13 @@ There are three files in `src/`
 - `fit_law.py`" Codes for fitting two fine-tuning scaling laws including vanilla law and our rectified law.
 - `model_select.py`: Codes for implementing different model selection methods including ZeroShot, SubTuning, ModelSize, OurFit, VanillaFit and AtS.
 
-## Environments
+## Environment
 
-    ```
+```bash
     pip install -r requirements.txt
-    ```
+```
 
-## Scaling Law Fitting
+## Scaling law fitting
 
 ```python
 from fit_law import fit_our_law, our_law_transform
@@ -39,7 +39,7 @@ log_x_test = np.log(1e6)
 pred_y_test = np.exp(our_law_transform(log_x_test, *fitted_params))
 ```
 
-## Model Selection
+## Model selection
 
 - input data: the performance of different models on various size of subsets. Suppose the data budget is $B$, the data format is a pandas dataframe similar to `benchmark/flan.csv`.
 
@@ -63,9 +63,11 @@ pred_y_test = np.exp(our_law_transform(log_x_test, *fitted_params))
 
 Please cite our paper if you use this code or part of it in your work:
 
+```
 @inproceedings{lin2024class,
       title={Class Incremental Learning via Likelihood Ratio Based Task Prediction}, 
       author={Haowei Lin and Yijia Shao and Weinan Qian and Ningxin Pan and Yiduo Guo and Bing Liu},
       year={2024},
       booktitle={International Conference on Learning Representations}
 }
+```
