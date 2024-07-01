@@ -51,7 +51,7 @@ pred_y_test = np.exp(our_law_transform(log_x_test, *fitted_params))
     | ... | ... | ... | ... | ... | ... |
 
 - usage:
-    ```
+    ```python
     from model_select import ats_select
 
     data = pd.read_csv(f'benchmark/flan.csv', index_col=0)
