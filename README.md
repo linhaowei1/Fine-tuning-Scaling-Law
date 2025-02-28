@@ -64,10 +64,10 @@ pred_y_test = np.exp(our_law_transform(log_x_test, *fitted_params))
 Please cite our paper if you use this code or part of it in your work:
 
 ```
-@inproceedings{lin2024class,
-      title={Class Incremental Learning via Likelihood Ratio Based Task Prediction}, 
-      author={Haowei Lin and Yijia Shao and Weinan Qian and Ningxin Pan and Yiduo Guo and Bing Liu},
+@inproceedings{lin2024selecting,
+      title={Selecting large language model to fine-tune via rectified scaling law}, 
+      author={Lin, Haowei and Huang, Baizhou and Ye, Haotian and Chen, Qinyu and Wang, Zihao and Li, Sujian and Ma, Jianzhu and Wan, Xiaojun and Zou, James and Liang, Yitao},
       year={2024},
-      booktitle={International Conference on Learning Representations}
+      booktitle={International Conference on Machine Learning}
 }
 ```
